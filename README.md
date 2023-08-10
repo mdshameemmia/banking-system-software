@@ -2,12 +2,12 @@
 
 ## create .env file and update this credentials 
 
-DB_CONNECTION=mysql
+`DB_CONNECTION=mysql
 DB_HOST=127.0.0.1
 DB_PORT=3306
 DB_DATABASE=bankings
 DB_USERNAME=root
-DB_PASSWORD=
+DB_PASSWORD=`
 
 ## If bankings db is not available on your desktop database, create a db name as 'bankings'
 ## run this command 
