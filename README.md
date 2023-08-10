@@ -13,6 +13,8 @@ DB_PASSWORD=`
 ## run this command 
 01. composer update 
 02. php artisan migrate
+03. php artisan optimize
+04. php artisan config:cache
 ## finally run this project by this commnad 
 01. php artisan serve 
 ## copy this url which is laravel project provided and paste it browser .  Hopefully it's running successfully 
