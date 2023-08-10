@@ -11,8 +11,8 @@ DB_PASSWORD=`
 
 ## If bankings db is not available on your desktop database, create a db name as 'bankings'
 ## run this command 
-01. php artisan migrate
-02. composer update 
+01. composer update 
+02. php artisan migrate
 ## finally run this project by this commnad 
 01. php artisan serve 
 ## copy this url which is laravel project provided and paste it browser .  Hopefully it's running successfully 
