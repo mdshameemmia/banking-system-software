@@ -84,7 +84,7 @@ class TransactionController extends Controller
                 Transaction::create($data);
             } else {
                 if ($user->account_type == 'individual') {
-                    $fee = $data['amount'] * 0.015;
+                    $fee = $data['amount'] * (0.015/100);
                     $amount = $data['amount'] - $fee;
                     $data['amount'] = $amount;
                     $data['fee'] = $fee;
@@ -94,9 +94,9 @@ class TransactionController extends Controller
                     // Decrease the withdrawal fee to 0.015% for Business accounts after a total withdrawal of 50K.
                     $fee = 0;
                     if ($data['amount'] == '50000') {
-                        $fee = $data['amount'] * 0.015;
+                        $fee = $data['amount'] * (0.015/100);
                     } else {
-                        $fee = $data['amount'] * 0.025;
+                        $fee = $data['amount'] * (0.025/100);
                     }
 
                     $amount = $data['amount'] - $fee;
